@@ -7,7 +7,7 @@ from pathlib import Path
 
 from colorlog import ColoredFormatter
 
-from .const import SOCKET_DOCKER
+from .const import (SOCKET_DOCKER, URL_HASSMART_ADDONS)
 from .config import CoreConfig
 
 _LOGGER = logging.getLogger(__name__)
@@ -16,6 +16,9 @@ _LOGGER = logging.getLogger(__name__)
 def initialize_system_data():
     """Setup default config and create folders."""
     config = CoreConfig()
+
+    # Add hassmart addon
+    config.add_addon_repository(URL_HASSMART_ADDONS)
 
     # homeassistant config folder
     if not config.path_config.is_dir():

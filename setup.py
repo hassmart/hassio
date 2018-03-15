@@ -4,7 +4,7 @@ from hassio.const import HASSIO_VERSION
 
 
 setup(
-    name='HassIO',
+    name='hassmart_HassIO',
     version=HASSIO_VERSION,
     license='BSD License',
     author='The Home Assistant Authors',

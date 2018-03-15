@@ -9,7 +9,7 @@ from colorlog import ColoredFormatter
 
 from .addons import AddonManager
 from .api import RestAPI
-from .const import SOCKET_DOCKER
+from .const import (SOCKET_DOCKER, URL_HASSMART_ADDONS)
 from .coresys import CoreSys
 from .supervisor import Supervisor
 from .homeassistant import HomeAssistant

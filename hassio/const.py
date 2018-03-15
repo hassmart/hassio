@@ -4,10 +4,11 @@ from ipaddress import ip_network
 
 HASSIO_VERSION = '0.98'
 
-URL_HASSIO_VERSION = ('https://raw.githubusercontent.com/home-assistant/'
+URL_HASSIO_VERSION = ('https://raw.githubusercontent.com/hassmart/'
                       'hassio/{}/version.json')
 
 URL_HASSIO_ADDONS = 'https://github.com/home-assistant/hassio-addons'
+URL_HASSMART_ADDONS = 'https://github.com/hassmart/hassmart-addons'
 
 HASSIO_DATA = Path("/data")
 
